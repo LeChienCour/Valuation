@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  price-calculator:
+    build: .
+    container_name: price_calculator
+    ports:
+      - "8080:80"
+    stdin_open: true
+    tty: true
